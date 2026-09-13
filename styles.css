@@ -182,14 +182,24 @@ a.work-row:focus-visible::after {
   transform: none;
 }
 
-.work-row.soon::after {
-  content: "Soon";
-  padding-top: 0.35rem;
-  color: var(--accent);
-  font: 600 11px/1 var(--sans);
+.work-copy strong {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.55rem;
+  font: 650 1.15rem/1.2 var(--sans);
+  letter-spacing: -0.02em;
+}
+
+.status {
+  padding: 0.2rem 0.42rem 0.18rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font: 600 10px/1 var(--sans);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  opacity: 0.85;
+  font-style: normal;
+  color: var(--accent);
 }
 
 .work-index {
@@ -199,10 +209,11 @@ a.work-row:focus-visible::after {
   color: var(--accent);
 }
 
-.work-copy strong {
-  display: block;
-  font: 650 1.15rem/1.2 var(--sans);
-  letter-spacing: -0.02em;
+.fineprint {
+  margin: 1.35rem 0 0;
+  color: var(--muted);
+  font: 500 12px/1.45 var(--sans);
+  letter-spacing: 0.01em;
 }
 
 .work-copy span {
@@ -221,7 +232,6 @@ a:focus-visible {
   main { padding: 12vh 22px 64px; }
   .lede { font-size: 1rem; }
   .work-row { grid-template-columns: 2rem 1fr; gap: 0.7rem; }
-  .work-row.soon::after,
   a.work-row::after { display: none; }
 }
 
