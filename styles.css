@@ -237,6 +237,11 @@ a:focus-visible {
   font: 500 13px/1.4 var(--sans);
 }
 
+.site-footer .sep {
+  margin: 0 0.55rem;
+  color: var(--line);
+}
+
 .site-footer a {
   color: var(--muted);
   text-decoration: none;
@@ -316,6 +321,67 @@ a:focus-visible {
 .legal-block a:hover,
 .legal-block a:focus-visible {
   text-decoration: underline;
+}
+
+.legal-sub a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.legal-sub a:hover,
+.legal-sub a:focus-visible {
+  color: var(--accent);
+}
+
+.privacy {
+  padding-bottom: 24px;
+}
+
+.policy {
+  margin-top: 2.8rem;
+}
+
+.policy + .policy {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.policy-lang {
+  margin: 0 0 0.25rem;
+  font: 600 12px/1 var(--sans);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.privacy .legal-block h3 {
+  margin: 0 0 0.85rem;
+  font: 650 1.15rem/1.25 var(--sans);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-transform: none;
+}
+
+.privacy .legal-block p + p {
+  margin-top: 0.9rem;
+}
+
+.privacy .legal-block ul {
+  margin: 0.85rem 0 0;
+  padding: 0 0 0 1.15rem;
+  color: var(--ink);
+  font: 400 1.05rem/1.55 var(--serif);
+}
+
+.privacy .legal-block li + li {
+  margin-top: 0.35rem;
+}
+
+.privacy .legal-block strong {
+  font-family: var(--sans);
+  font-weight: 650;
+  font-size: 0.95em;
 }
 
 @media (max-width: 560px) {
